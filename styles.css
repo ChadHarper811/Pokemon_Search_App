@@ -80,23 +80,25 @@ body {
     box-shadow: 8px -8px 10px var(--shadow) inset, -6px 6px 12px var(--highlight) inset;
 }
 
-#b-button, #a-button {
+#b-button, #a-button, #select-button, #start-button {
+    position: absolute;
     background-color: var(--gray);
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
     box-shadow: 1px -1px 6px var(--shadow) inset, -1px 1px 6px var(--highlight) inset;
 }
 
+#b-button, #a-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
 #b-button {
-    position: absolute;
-    bottom: 25vh;
+    bottom: 22vh;
     right: 12vh;
 }
 
 #a-button {
-    position: absolute;
-    bottom: 30vh;
+    bottom: 27vh;
     right: 5vh;
 }
 
@@ -104,24 +106,45 @@ body {
     position: absolute;
     font-weight: bold;
     color: var(--gray);
-    transform: rotate(-40deg);
+    transform: rotate(-30deg);
     font-size: 2vh;
 }
 
 #a {
-    bottom: 28vh;
-    right: 4vh;
+    bottom: 25vh;
+    right: 5vh;
 }
 
 #b {
-    bottom: 23vh;
-    right: 11vh;
+    bottom: 20vh;
+    right: 12vh;
+}
+
+#select-button, #start-button {
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    bottom: 12vh;
+    transform: rotate(-30deg);
+}
+
+#select, #start {
+    bottom: 9.5vh;
 }
 
 #select-button {
-    position: absolute;
-    width: 50px;
-    height: 10px;
+    right: 20vh;
 }
 
+#start-button {
+    right: 29vh;
+}
+
+#select {
+    right: 27.5vh;
+}
+
+#start {
+    right: 19vh;
+}
 
