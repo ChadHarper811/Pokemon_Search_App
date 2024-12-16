@@ -77,7 +77,7 @@ body {
     background-color: var(--red);
     border-radius: 10px 10px 50px 10px;
     padding-top: 30px;
-    box-shadow: 8px -8px 10px var(--shadow) inset, -6px 6px 12px var(--highlight) inset;
+    box-shadow: 6px -6px 12px var(--shadow) inset, -6px 6px 12px var(--highlight) inset;
 }
 
 #b-button, #a-button, #select-button, #start-button {
@@ -87,8 +87,8 @@ body {
 }
 
 #b-button, #a-button {
-    height: 50px;
-    width: 50px;
+    height: 6vh;
+    width: 6vh;
     border-radius: 50px;
 }
 
@@ -121,8 +121,8 @@ body {
 }
 
 #select-button, #start-button {
-    width: 50px;
-    height: 10px;
+    width: 6vh;
+    height: 1vh;
     border-radius: 10px;
     bottom: 12vh;
     transform: rotate(-30deg);
