@@ -5,9 +5,7 @@
     --orange: #c96700;
     --white: #f0f0f0;
     --off_white: #d6d6d6;
-    --money-background: #38613e;
-    --money-forground: #5fb36b;
-    --coin: #ebeced;
+    --red: #7c0000;
 }
 
 * {
@@ -18,7 +16,7 @@
 
 body {
     font-family: 'Nova Square', sans-serif;
-    background-color: var(--gray);
+    background-color: var(--blue);
     color: var(--orange);
 }
 
@@ -35,6 +33,7 @@ body {
 
 .header {
     font-size: 45px;
+    margin-bottom: 1vh;
 }
 
 
@@ -63,4 +62,31 @@ body {
     color: var(--off_white);
     background-color: var(--orange);
     cursor: pointer;
+}
+
+#game-boy-body {
+    height: 90vh;
+    width: 58vh;
+    background-color: var(--red);
+    border-radius: 10px 10px 50px 10px;
+    padding-top: 30px;
+}
+
+#b-button, #a-button {
+    background-color: var(--gray);
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+#b-button {
+    position: absolute;
+    bottom: 25vh;
+    right: 73vh;
+}
+
+#a-button {
+    position: absolute;
+    bottom: 30vh;
+    right: 65vh;
 }
