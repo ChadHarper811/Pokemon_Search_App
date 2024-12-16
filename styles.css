@@ -6,6 +6,8 @@
     --white: #f0f0f0;
     --off_white: #d6d6d6;
     --red: #7c0000;
+    --shadow: #0000008f;
+    --highlight: #ffffff5d;
 }
 
 * {
@@ -70,6 +72,7 @@ body {
     background-color: var(--red);
     border-radius: 10px 10px 50px 10px;
     padding-top: 30px;
+    box-shadow: 8px -8px 10px var(--shadow) inset, -6px 6px 12px var(--highlight) inset;
 }
 
 #b-button, #a-button {
@@ -77,6 +80,7 @@ body {
     height: 50px;
     width: 50px;
     border-radius: 50px;
+    box-shadow: 3px -3px 10px var(--shadow) inset, -3px 3px 10px var(--highlight) inset;
 }
 
 #b-button {
