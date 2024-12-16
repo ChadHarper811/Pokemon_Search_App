@@ -66,6 +66,10 @@ body {
     cursor: pointer;
 }
 
+.info {
+    display: none;
+}
+
 #game-boy-body {
     height: 90vh;
     width: 58vh;
@@ -80,7 +84,7 @@ body {
     height: 50px;
     width: 50px;
     border-radius: 50px;
-    box-shadow: 3px -3px 10px var(--shadow) inset, -3px 3px 10px var(--highlight) inset;
+    box-shadow: 1px -1px 6px var(--shadow) inset, -1px 1px 6px var(--highlight) inset;
 }
 
 #b-button {
