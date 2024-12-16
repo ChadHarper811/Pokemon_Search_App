@@ -71,6 +71,7 @@ body {
 }
 
 #game-boy-body {
+    position: relative;
     height: 90vh;
     width: 58vh;
     background-color: var(--red);
@@ -90,11 +91,37 @@ body {
 #b-button {
     position: absolute;
     bottom: 25vh;
-    right: 73vh;
+    right: 12vh;
 }
 
 #a-button {
     position: absolute;
     bottom: 30vh;
-    right: 65vh;
+    right: 5vh;
 }
+
+#a, #b, #select, #start {
+    position: absolute;
+    font-weight: bold;
+    color: var(--gray);
+    transform: rotate(-40deg);
+    font-size: 2vh;
+}
+
+#a {
+    bottom: 28vh;
+    right: 4vh;
+}
+
+#b {
+    bottom: 23vh;
+    right: 11vh;
+}
+
+#select-button {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+}
+
+
