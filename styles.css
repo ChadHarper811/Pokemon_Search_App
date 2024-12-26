@@ -38,6 +38,29 @@ body {
     margin-bottom: 1vh;
 }
 
+#on-off-switch {
+    width: 3vh;
+    height: 1.5vh;
+    background-color: var(--gray);
+    position: absolute;
+    left: 4vh;
+    top: -1.5vh;
+    border-radius: 1vh 1vh 0vh 0vh;
+    box-shadow: 1px 0px 6px var(--shadow) inset, -1px 1px 6px var(--highlight) inset;
+}
+
+#on-off-text {
+    position: absolute;
+    top: 1.5vh;
+    left: 2vh;
+    width: 12vh;
+    height: 2.5vh;
+    font-size: 1.5vh;
+    color:  #460000;
+    border-radius: 1vh;
+    text-shadow: 1px -1px 6px var(--shadow) inset, -1px 1px 6px var(--highlight) inset;
+    box-shadow: 1px -1px 6px var(--highlight) inset, -1px 1px 6px var(--shadow) inset;
+}
 
 .input-div {
     width: 36vh;
@@ -98,8 +121,8 @@ body {
 }
 
 #a-button {
-    bottom: 27vh;
-    right: 5vh;
+    bottom: 26vh;
+    right: 4vh;
 }
 
 #a, #b, #select, #start {
@@ -111,8 +134,8 @@ body {
 }
 
 #a {
-    bottom: 25vh;
-    right: 5vh;
+    bottom: 24vh;
+    right: 4vh;
 }
 
 #b {
