@@ -103,7 +103,47 @@ body {
     box-shadow: 6px -6px 12px var(--shadow) inset, -6px 6px 12px var(--highlight) inset;
 }
 
-#b-button, #a-button, #select-button, #start-button {
+#center {
+    width: 3vh;
+    height: 3vh;
+    background-color: var(--gray);
+    position: absolute;
+    z-index: 1;
+    bottom: 26vh;
+    left: 10vh;
+}
+
+#up, #down {
+    z-index: 0;
+    width: 3vh;
+    height: 4vh;
+    left: 10vh;
+}
+
+#up {
+    bottom: 28.5vh;
+}
+
+#left, #right {
+    z-index: 0;
+    width: 4.5vh;
+    height: 3vh;
+    bottom: 26vh;
+}
+
+#left{
+    left: 6.5vh;
+}
+
+#right {
+    left: 12.5vh;
+}
+
+#down {
+    bottom: 22.5vh;
+}
+
+#b-button, #a-button, #select-button, #start-button, #up, #left, #right, #down  {
     position: absolute;
     background-color: var(--gray);
     box-shadow: 1px -1px 6px var(--shadow) inset, -1px 1px 6px var(--highlight) inset;
@@ -156,18 +196,18 @@ body {
 }
 
 #select-button {
-    right: 20vh;
+    left: 20vh;
 }
 
 #start-button {
-    right: 29vh;
+    left: 29vh;
 }
 
 #select {
-    right: 27.5vh;
+    left: 20.5vh;
 }
 
 #start {
-    right: 19vh;
+    left: 30vh;
 }
 
