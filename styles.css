@@ -114,8 +114,8 @@ body {
 }
 
 #center {
-    width: 3vh;
-    height: 3vh;
+    width: 4.5vh;
+    height: 4.5vh;
     background-color: var(--gray);
     position: absolute;
     z-index: 1;
@@ -124,45 +124,45 @@ body {
 }
 
 #center-circle {
-    width: 2vh;
-    height: 2vh;
+    width: 3vh;
+    height: 3vh;
     background-color: var(--light_gray);
     position: absolute;
     z-index: 1;
     border-radius: 5vh;
-    margin: .5vh;
+    margin: .75vh;
     box-shadow: -6px 6px 18px var(--shadow) inset, 5px -5px 10px var(--highlight) inset;
 }
 
 
 #up, #down {
     z-index: 0;
-    width: 3vh;
-    height: 4.5vh;
+    width: 4.5vh;
+    height: 6vh;
     left: 10vh;
 }
 
 #up {
-    bottom: 28vh;
+    bottom: 29.5vh;
 }
 
 #left, #right {
     z-index: 0;
-    width: 4.5vh;
-    height: 3vh;
+    width: 6vh;
+    height: 4.5vh;
     bottom: 26vh;
 }
 
 #left{
-    left: 6.5vh;
+    left: 5vh;
 }
 
 #right {
-    left: 12vh;
+    left: 13.5vh;
 }
 
 #down {
-    bottom: 22.5vh;
+    bottom: 21vh;
 }
 
 #b-button, #a-button, #select-button, #start-button, #up, #left, #right, #down  {
@@ -172,14 +172,14 @@ body {
 }
 
 #b-button, #a-button {
-    height: 6vh;
-    width: 6vh;
+    height: 7vh;
+    width: 7vh;
     border-radius: 50px;
 }
 
 #b-button {
-    bottom: 22vh;
-    right: 12vh;
+    bottom: 21vh;
+    right: 13vh;
 }
 
 #a-button {
@@ -192,33 +192,33 @@ body {
     font-weight: bold;
     color: var(--gray);
     transform: rotate(-30deg);
-    font-size: 2vh;
+    font-size: 2.5vh;
 }
 
 #a {
-    bottom: 24vh;
+    bottom: 23.5vh;
     right: 4vh;
 }
 
 #b {
-    bottom: 20vh;
-    right: 12vh;
+    bottom: 18.5vh;
+    right: 13vh;
 }
 
 #select-button, #start-button {
-    width: 6vh;
-    height: 1vh;
+    width: 8vh;
+    height: 1.5vh;
     border-radius: 10px;
     bottom: 12vh;
     transform: rotate(-30deg);
 }
 
 #select, #start {
-    bottom: 9.5vh;
+    bottom: 9vh;
 }
 
 #select-button {
-    left: 20vh;
+    left: 19vh;
 }
 
 #start-button {
@@ -226,10 +226,10 @@ body {
 }
 
 #select {
-    left: 20.5vh;
+    left: 20vh;
 }
 
 #start {
-    left: 30vh;
+    left: 30.5vh;
 }
 
