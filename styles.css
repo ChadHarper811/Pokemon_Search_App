@@ -35,7 +35,7 @@ body {
 
 .header {
     font-size: 6vh;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 }
 
 #on-off-switch {
@@ -60,6 +60,16 @@ body {
     border-radius: 1vh;
     text-shadow: 1px -1px 6px var(--shadow) inset, -1px 1px 6px var(--highlight) inset;
     box-shadow: 1px -1px 6px var(--highlight) inset, -1px 1px 6px var(--shadow) inset;
+}
+
+#game-boy-outer-screen {
+    width: 52vh;
+    height: 40vh;
+    position: absolute;
+    left: 3vh;
+    top: 5.5vh;
+    background-color: var(--gray);
+    border-radius: 2vh 2vh 7vh 2vh;
 }
 
 .input-div {
