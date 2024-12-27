@@ -113,15 +113,27 @@ body {
     left: 10vh;
 }
 
+#center-circle {
+    width: 2vh;
+    height: 2vh;
+    background-color: var(--light_gray);
+    position: absolute;
+    z-index: 1;
+    border-radius: 5vh;
+    margin: .5vh;
+    box-shadow: -6px 6px 18px var(--shadow) inset, 5px -5px 10px var(--highlight) inset;
+}
+
+
 #up, #down {
     z-index: 0;
     width: 3vh;
-    height: 4vh;
+    height: 4.5vh;
     left: 10vh;
 }
 
 #up {
-    bottom: 28.5vh;
+    bottom: 28vh;
 }
 
 #left, #right {
@@ -136,7 +148,7 @@ body {
 }
 
 #right {
-    left: 12.5vh;
+    left: 12vh;
 }
 
 #down {
