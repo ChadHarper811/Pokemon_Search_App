@@ -8,6 +8,8 @@
     --red: #7c0000;
     --shadow: #0000008f;
     --highlight: #ffffff5d;
+    --screen-off: #63693f;
+    --screen-on: #4c693f;
 }
 
 * {
@@ -47,10 +49,10 @@ body {
     top: -1.5vh;
     border-radius: 1vh 1vh 0vh 0vh;
     box-shadow: 1px 0px 6px var(--shadow) inset, -1px 1px 6px var(--highlight) inset;
-    animation: start 2s ease-in-out 2s 1 reverse forwards;
+    animation: switch-on 1s ease-in-out 2s 1 reverse forwards;
 }
 
-@keyframes start {
+@keyframes switch-on {
     from {left: 9vh}
     to {left: 4vh}
 }
@@ -77,6 +79,22 @@ body {
     background-color: var(--gray);
     border-radius: 2vh 2vh 7vh 2vh;
 }
+
+#game-boy-inner-screen {
+    width: 38vh;
+    height: 30vh;
+    background-color: var(--screen-off);
+    position: absolute;
+    top: 6vh;
+    left: 7vh;
+    animation: screen-on 1s ease-in-out 3s 1 normal forwards;
+}
+
+@keyframes screen-on {
+    from {background-color: var(--screen-off);}
+    to {background-color: var(--screen-on);}
+}
+
 
 .input-div {
     width: 36vh;
