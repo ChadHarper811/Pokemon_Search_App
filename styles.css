@@ -47,6 +47,12 @@ body {
     top: -1.5vh;
     border-radius: 1vh 1vh 0vh 0vh;
     box-shadow: 1px 0px 6px var(--shadow) inset, -1px 1px 6px var(--highlight) inset;
+    animation: start 2s ease-in-out 2s 1 reverse forwards;
+}
+
+@keyframes start {
+    from {left: 9vh}
+    to {left: 4vh}
 }
 
 #on-off-text {
