@@ -49,7 +49,7 @@ body {
     top: -1.5vh;
     border-radius: 1vh 1vh 0vh 0vh;
     box-shadow: 1px 0px 6px var(--shadow) inset, -1px 1px 6px var(--highlight) inset;
-    animation: switch-on 1s ease-in-out 2s 1 reverse forwards;
+    animation: switch-on 1s ease-in-out 2s reverse forwards;
 }
 
 @keyframes switch-on {
@@ -98,14 +98,53 @@ body {
     left: 2.5vh;
 }
 
+#outer-screen-label {
+    font-size: 1.5vh;
+    color: var(--white);
+    background-color: var(--gray);
+    position: absolute;
+    padding: .5vh;
+    top: .8vh;
+    left: 19vh;
+}
+
+#battery-light {
+    width: 1.5vh;
+    height: 1.5vh;
+    background-color: var(--light_gray);
+    border-radius: 50%;
+    position: absolute;
+    top: 15vh;
+    left: 2.5vh;
+    animation: battery-on .5s ease-in-out 3s normal forwards;
+}
+
+@keyframes battery-on {
+    from {background-color: var(--light_gray);}
+    to {
+        background-color: red;
+        box-shadow: 1px 1px 5px var(--red) inset, 0px 0px 10px 2px red;
+    }
+}
+
+
+#battery-label {
+    font-size: 1.5vh;
+    color: var(--white);
+    background-color: var(--gray);
+    position: absolute;
+    top: 17vh;
+    left: .3vh;
+}
+
 #game-boy-inner-screen {
-    width: 38vh;
-    height: 30vh;
+    width: 40vh;
+    height: 32vh;
     background-color: var(--screen-off);
     position: absolute;
-    top: 6vh;
+    top: 4vh;
     left: 7vh;
-    animation: screen-on 1s ease-in-out 3s 1 normal forwards;
+    animation: screen-on 1s ease-in-out 3s normal forwards;
 }
 
 @keyframes screen-on {
