@@ -314,3 +314,32 @@ body {
     left: 30.5vh;
 }
 
+#vents {
+    position: absolute;
+    bottom: 3vh;
+    right: 2vh;
+    display: flex;
+    transform: rotate(-30deg);
+}
+.vent {
+    width: .7vh;
+    height: 8vh;
+    border-radius: 10px;
+    margin: .7vh;
+    background-color: #660000;
+    box-shadow: -1px -1px var(--highlight), 1px 1px var(--shadow);
+}
+
+#vent-shadow {
+    position: absolute;
+    bottom: 0vh;
+    right: 0vh;
+	width: 0;
+	height: 0;
+	border-top: 1.5vh solid transparent;
+	border-left: 17vh solid transparent;
+	border-bottom: 10vh solid var(--shadow);
+    border-right: 2vh solid var(--shadow);
+    border-radius: 0px 0px 50px 0px;
+    opacity: 15%;
+}
