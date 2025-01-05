@@ -80,6 +80,24 @@ body {
     border-radius: 2vh 2vh 7vh 2vh;
 }
 
+#pink-line {
+    width: 47vh;
+    height: .2vh;
+    background-color: rgb(133, 1, 78);
+    position: absolute;
+    top: 1.5vh;
+    left: 2.5vh;
+}
+
+#purple-line {
+    width: 47vh;
+    height: .2vh;
+    background-color: rgb(54, 0, 104);
+    position: absolute;
+    top: 2.5vh;
+    left: 2.5vh;
+}
+
 #game-boy-inner-screen {
     width: 38vh;
     height: 30vh;
