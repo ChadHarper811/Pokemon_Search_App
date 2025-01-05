@@ -177,25 +177,25 @@ body {
 .input-div {
     width: 36vh;
     height: 10vh;
-    padding: 1vh;
-    margin: auto;
-    font-size: 2.5vh;
+    padding: .5vh;
+    margin: 0 auto;
+    font-size: 1.8vh;
     text-align: center;
 }
 
 #search-input{
-    width: 22vh;
-    height: 3vh;
-    margin: 1vh auto;
+    width: 16vh;
+    height: 2vh;
+    margin: 0 auto;
     color: var(--orange);
     font-family: 'Nova Square', sans-serif;
-    font-size: 2vh;
+    font-size: 1.2vh;
 }
 
 #search-button {
-    font-size: 2vh;
+    font-size: 1.2vh;
     font-family: 'Nova Square', sans-serif;
-    padding: .5vh;
+    padding: .2vh;
     color: var(--off_white);
     background-color: var(--orange);
     cursor: pointer;

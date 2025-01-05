@@ -15,6 +15,8 @@ const specialAttack = document.getElementById("special-attack");
 const specialDefense = document.getElementById("special-defense");
 const speed = document.getElementById("speed");
 const searchDiv = document.getElementById("search-div");
+const searchBtn = document.getElementById("search-button");
+const searchInput = document.getElementById("search-input")
 const gameBoyBody = document.getElementById("game-boy-body");
 
 // delaying event handlers so start up animation can finish
