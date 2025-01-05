@@ -33,7 +33,6 @@ const startUp = () => {
     startingText.style.display = "none";
     searchDiv.classList.remove("info");
     gameBoyBody.style.zoom = "220%";
-    document.body.classList.add("stop-scrolling");
 }
 
 // event handlers

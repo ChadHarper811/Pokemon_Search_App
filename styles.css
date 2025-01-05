@@ -25,11 +25,6 @@ body {
     color: var(--orange);
 }
 
-.stop-scrolling {
-    height: 100%;
-    overflow-y: hidden;
-}
-
 .container {
     display: flex;
     flex-direction: column;
