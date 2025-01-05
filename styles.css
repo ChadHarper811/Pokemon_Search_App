@@ -10,6 +10,7 @@
     --highlight: #ffffff5d;
     --screen-off: #63693f;
     --screen-on: #4c693f;
+    --screen-text: #193130;
 }
 
 * {
@@ -150,6 +151,21 @@ body {
 @keyframes screen-on {
     from {background-color: var(--screen-off);}
     to {background-color: var(--screen-on);}
+}
+
+#starting-text {
+    position: absolute;
+    top: 10vh;
+    left: 10vh;
+    color: var(--screen-off);
+    font-size: 3vh;
+    font-weight: bold;
+    animation: starting-text-on 1s ease-in-out 3.4s normal forwards;
+}
+
+@keyframes starting-text-on {
+    from {color: var(--screen-off);}
+    to {color: var(--screen-text);}
 }
 
 
