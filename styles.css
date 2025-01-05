@@ -194,6 +194,19 @@ body {
     box-shadow: 6px -6px 12px var(--shadow) inset, -6px 6px 12px var(--highlight) inset;
 }
 
+#game-boy-label {
+    position: absolute;
+    bottom: 40vh;
+    left: 3vh;
+    color: var(--gray);
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+#game-boy-label > span {
+    font-size: 3.5vh;
+}
+
 #center {
     width: 4.5vh;
     height: 4.5vh;
