@@ -14,6 +14,8 @@ const defense = document.getElementById("defense");
 const specialAttack = document.getElementById("special-attack");
 const specialDefense = document.getElementById("special-defense");
 const speed = document.getElementById("speed");
+const searchDiv = document.getElementById("search-div");
+const gameBoyBody = document.getElementById("game-boy-body");
 
 // delaying event handlers so start up animation can finish
 let startingDelayFinsihed = false;
@@ -27,6 +29,9 @@ const startingDelay = setTimeout(delayFinished, 4500);
 // functions
 const startUp = () => {
     startingText.style.display = "none";
+    searchDiv.classList.remove("info");
+    gameBoyBody.style.zoom = "220%";
+    document.body.classList.add("stop-scrolling");
 }
 
 // event handlers
