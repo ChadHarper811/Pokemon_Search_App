@@ -207,8 +207,59 @@ body {
     display: none;
 }
 
-.info {
-    display: none;
+.info, #info-top, #thumbnail-container, #pokemon-id, #pokemon-name, #height, #weight {
+    color: var(--screen-text);
+    position: absolute;
+}
+
+#info-top {
+    width: 98%;
+    height: 12vh;
+    top: 5vh;
+    left: .4vh;
+    border-bottom: 2px solid var(--screen-text);
+}
+
+#thumbnail {
+    mix-blend-mode: overlay;
+}
+
+#pokemon-id {
+    top: .5vh;
+    left: 16vh;
+}
+
+#pokemon-name {
+    font-size: 2.5vh;
+    top: 3vh;
+    left: 16vh;
+}
+
+#height {
+    top: 6.5vh;
+    left: 25vh;
+}
+
+#weight {
+    top: 9vh;
+    left: 25vh;
+}
+
+#info-bottom-left {
+    position: absolute;
+    width: 50%;
+    height: 12vh;
+    top: 17vh;
+    border: 2px solid var(--screen-text);
+}
+
+#info-bottom-right {
+    position: absolute;
+    width: 50%;
+    height: 12vh;
+    top: 17vh;
+    right: 0;
+    border: 2px solid var(--screen-text);
 }
 
 #game-boy-body {

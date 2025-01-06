@@ -32,64 +32,50 @@
                             <p id="starting-text">PRESS START <br> or <br> HIT ENTER</p>
 
                             <form id="search-form" class="input-form hidden">
-                                <label for="search-input">Search Pok&#233;mon name or #:</label>
+                                <label for="search-input">Search Pok&#233;mon name or ID#:</label>
                                 <input type="text" id="search-input" placeholder="Arcanine or 59" required>
                                 <button id="search-button">Search</button>
                             </form>
 
-                            <div id="top-info" class="info hidden">
-                                <div id="pokemon-image-container"></div>
-                                <tbody>
-                                    <tr>
-                                        <td>NO.</td>
-                                        <td id="pokemon-id"></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="pokemon-name"></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="weight"></td>
-                                        <td id="height"></td>
-                                    </tr>
-                                </tbody>
+                            <div id="info-top" class="info ">
+
+                                <div id="thumbnail-container">
+                                    <img id="thumbnail" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png" alt="Arcanine front default sprite">
+                                </div>
+                                <div id="pokemon-id">NO. 59</div>
+                                <div id="pokemon-name">ARCANINE</div>
+                                <div id="height">Height: 19</div>
+                                <div id="weight">Weight: 1550</div>
+
                             </div>
 
-                            <div id="bottom-left-info"  class="info hidden">
+                            <div id="info-bottom-left"  class="info ">
                                 <div id="hp-bar"></div>
-                                <tbody>
-                                    <tr>
-                                        <td>HP/ </td>
-                                        <td id="hp"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>TYPE/ </td>
-                                        <td id="height"></td>
-                                    </tr>
-                                </tbody>
+                                <div id="hp">90/90</div>
+                                <div id="types">TYPE/ fire</div>
                             </div>
 
-                            <div id="bottom-right-info"  class="info hidden">
-                                <div id="hp-bar"></div>
+                            <div id="info-bottom-right"  class="info ">
                                 <tbody>
                                     <tr>
                                         <td>ATTACK/ </td>
-                                        <td id="attack"></td>
+                                        <td id="attack">110</td>
                                     </tr>
                                     <tr>
                                         <td>DEFENSE/ </td>
-                                        <td id="defense"></td>
+                                        <td id="defense">80</td>
                                     </tr>
                                     <tr>
                                         <td>SPCL. ATK/ </td>
-                                        <td id="special-attack"></td>
+                                        <td id="special-attack">100</td>
                                     </tr>
                                     <tr>
                                         <td>SPCL. DEF/ </td>
-                                        <td id="special-defense"></td>
+                                        <td id="special-defense">80</td>
                                     </tr>
                                     <tr>
                                         <td>SPEED/ </td>
-                                        <td id="speed"></td>
+                                        <td id="speed">95</td>
                                     </tr>
                                 </tbody>
                             </div>

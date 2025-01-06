@@ -5,6 +5,7 @@ const batteryLight = document.getElementById("battery-light");
 const batteryLabel = document.getElementById("battery-label");
 const pokemonName = document.getElementById("pokemon-name");
 const pokemonId = document.getElementById("pokemon-id");
+const thumbnail = document.getElementById("thumbnail-container");
 const weight = document.getElementById("weight");
 const height = document.getElementById("height");
 const types = document.getElementById("types");
@@ -18,6 +19,9 @@ const searchForm = document.getElementById("search-form");
 const searchBtn = document.getElementById("search-button");
 const searchInput = document.getElementById("search-input")
 const gameBoyBody = document.getElementById("game-boy-body");
+const infoTop = document.getElementById("info-top");
+const infoBottomLeft = document.getElementById("info-bottom-left");
+const infoBottomRight = document.getElementById("info-bottom-right");
 
 // delaying event handlers so start up animation can finish
 let startingDelayFinsihed = false;
@@ -35,19 +39,73 @@ const startUp = () => {
     gameBoyBody.style.zoom = "220%";
 }
 
-const pokemonSearch = () => {
-    
-}
+const pokemonSearch = async () => {
+    try {
+        const pokemonNameOrId = searchInput.value.toLowerCase();
+        const respose = await fetch(
+            `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokemonNameOrId}`
+        );
+        const data = await respose.json();
+
+        pokemonName.textContent = `${data.name.toUpperCase()}`;
+        pokemonId.textContent = `NO. ${data.id}`;
+        weight.textContent = `Weight: ${data.weight}`;
+        height.textContent = `Height: ${data.height}`;
+        pokemonThumbnail.innerHTML = `
+        <img id="thumbnail" src="${data.sprites.front_default}" alt="${data.name} front default sprite"> 
+        `;
+        hp.textContent = data.stats[0].base_stat;
+        attack.textContent = data.stats[1].base_stat;
+        defense.textContent = data.stats[2].base_stat;
+        specialAttack.textContent = data.stats[3].base_stat;
+        specialDefense.textContent = data.stats[4].base_stat;
+        speed.textContent = data.stats[5].base_stat;
+        types.innerHTML = data.types.map(obj => `<p class="type">${obj.type.name}</p>`).join("");
+        infoTop.classList.remove("hidden");
+        infoBottomLeft.classList.remove("hidden");
+        infoBottomRight.classList.remove("hidden");
+    } catch (error) {
+        clearDisplay();
+        alert('Pokémon not found');
+        console.log(`Pokémon not found: ${err}`);
+    }
+};
+
+const clearDisplay = () => {
+    const thumbnail = document.getElementById("thumbnail");
+    if (thumbnail) thumbnail.remove();
+
+    pokemonName.textContent = "";
+    pokemonID.textContent = "";
+    types.innerHTML = "";
+    height.textContent = "";
+    weight.textContent = "";
+    hp.textContent = "";
+    attack.textContent = "";
+    defense.textContent = "";
+    specialAttack.textContent = "";
+    specialDefense.textContent = "";
+    speed.textContent = "";
+
+    infoTop.classList.add("hidden");
+    infoBottomLeft.classList.add("hidden");
+    infoBottomRight.classList.add("hidden");
+};
 
 // event handlers
 startBtn.addEventListener("click", () => {
     if(startingDelayFinsihed === true) {
         startUp()
     }
-})
+});
 
 document.addEventListener("keypress", (e) => {
     if(e.key === "Enter" && startingDelayFinsihed === true) {
         startUp()
     }
-})
+});
+
+searchForm.addEventListener("submit", event => {
+    event.preventDefault();
+    pokemonSearch();
+});
