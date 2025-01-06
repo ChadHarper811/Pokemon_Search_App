@@ -9,6 +9,7 @@ const thumbnail = document.getElementById("thumbnail-container");
 const weight = document.getElementById("weight");
 const height = document.getElementById("height");
 const types = document.getElementById("types");
+const hpTotal = document.getElementById("hp-total");
 const hp = document.getElementById("hp");
 const attack = document.getElementById("attack");
 const defense = document.getElementById("defense");
@@ -57,7 +58,8 @@ const pokemonSearch = async () => {
         weight.textContent = `Weight: ${data.weight}`;
         
         // bottom left info
-        hp.textContent = `${data.stats[0].base_stat}/   ${data.stats[0].base_stat}`;
+        hpTotal.textContent = `${data.stats[0].base_stat}/   `;
+        hp.textContent = `${data.stats[0].base_stat}`
         types.innerHTML = data.types.map(obj => `<span class="type">${obj.type.name}</span>`).join("");
 
         // bottom right info
@@ -93,6 +95,7 @@ const clearDisplay = () => {
 
     // bottom right info clear
     hp.textContent = "";
+    hpTotal.textContent = "";
     types.innerHTML = "";
     
     // bottom left info clear
