@@ -168,6 +168,9 @@ body {
     to {color: var(--screen-text);}
 }
 
+.hidden {
+    display: none;
+}
 
 .input-form {
     width: 36vh;
@@ -203,63 +206,164 @@ body {
     outline: 1px solid var(--orange)
 }
 
-.hidden {
-    display: none;
-}
-
-.info, #info-top, #thumbnail-container, #pokemon-id, #pokemon-name, #height, #weight {
+.info, #info-top, #thumbnail-container, #pokemon-id, #pokemon-name, #height, #weight, #info-bottom-left, #info-bottom-right, #hp-bar, #hp-label, #bar-background, #bar, #hp, #type-label, #types, .types, #attack-label, #attack, #defense-label, #defense, #special-attack-label, #special-attack, #special-defense-label, #special-defense, #speed-label, #speed {
     color: var(--screen-text);
     position: absolute;
 }
 
 #info-top {
     width: 98%;
-    height: 12vh;
+    height: 11.8vh;
     top: 5vh;
     left: .4vh;
     border-bottom: 2px solid var(--screen-text);
 }
 
+#thumbnail-container {
+    height: 12vh;
+    width: 12vh;
+}
 #thumbnail {
+    width: 100%;
+    height: auto;
     mix-blend-mode: overlay;
 }
 
 #pokemon-id {
     top: .5vh;
-    left: 16vh;
+    left: 12vh;
 }
 
 #pokemon-name {
-    font-size: 2.5vh;
+    font-size: 3vh;
     top: 3vh;
-    left: 16vh;
+    left: 12vh;
+}
+
+#height, #weight {
+    top: 9vh;
+    font-size: 1.5vh;
 }
 
 #height {
-    top: 6.5vh;
-    left: 25vh;
+    left: 12vh;
 }
 
 #weight {
-    top: 9vh;
-    left: 25vh;
+    left: 24vh;
+    
+}
+
+#info-bottom-left, #info-bottom-right {
+    width: 50%;
+    height: 14.6vh;
+    top: 17vh;
 }
 
 #info-bottom-left {
-    position: absolute;
-    width: 50%;
-    height: 12vh;
-    top: 17vh;
-    border: 2px solid var(--screen-text);
+    border-right: 2px solid var(--screen-text);
 }
 
+#hp-bar {
+    background-color: var(--screen-text);
+    height: 2.2vh;
+    width: 16vh;
+    top: .5vh;
+    left: 2vh;
+}
+
+#hp-label {
+    color: var(--screen-on);
+    left: .5vh;
+}
+
+#bar-background {
+    background-color: var(--screen-on);
+    height: 1.8vh;
+    width: 11vh;
+    left: 4vh;
+}
+
+#bar {
+    background-color: var(--screen-text);
+    height: .7vh;
+    width: 11vh;
+    left: 0vh;
+    top: .6vh;
+}
+
+#hp {
+    top: 3vh;
+    left: 7vh;
+}
+
+#type-label {
+    top: 7vh;
+    left: 1vh;
+}
+
+#types {
+    top: 10vh;
+    height: 4.9vh;
+    width: 19.8vh;
+    display: block;
+
+}
+
+.types {
+    font-size: 2vh;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    background-color: var(--screen-text);
+    color: var(--screen-on);
+    padding: .1vh .4vh;
+}
+
+
 #info-bottom-right {
-    position: absolute;
-    width: 50%;
-    height: 12vh;
     top: 17vh;
     right: 0;
-    border: 2px solid var(--screen-text);
+    border-left: 2px solid var(--screen-text);
+}
+
+#attack, #defense, #special-attack, #special-defense, #speed {
+    right: 1vh;
+}
+
+#attack {
+    top: 1vh;
+}
+
+#defense-label {
+    top: 3vh;
+}
+
+#defense {
+    top: 4vh;
+}
+#special-attack-label {
+    top: 6vh;
+}
+
+#special-attack {
+    top: 7vh;
+}
+
+#special-defense-label {
+    top: 9vh;
+}
+
+#special-defense {
+    top: 10vh;
+}
+
+#speed-label {
+    top: 12vh;
+}
+
+#speed {
+    top: 13vh;
 }
 
 #game-boy-body {
