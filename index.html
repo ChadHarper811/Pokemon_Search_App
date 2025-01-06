@@ -31,13 +31,13 @@
 
                             <p id="starting-text">PRESS START <br> or <br> HIT ENTER</p>
 
-                            <div id="search-div" class="input-div info">
+                            <form id="search-form" class="input-form hidden">
                                 <label for="search-input">Search Pok&#233;mon name or #:</label>
-                                <input type="text" id="search-input" required>
+                                <input type="text" id="search-input" placeholder="Arcanine or 59" required>
                                 <button id="search-button">Search</button>
-                            </div>
+                            </form>
 
-                            <div id="top-info"  class="info">
+                            <div id="top-info" class="info hidden">
                                 <div id="pokemon-image-container"></div>
                                 <tbody>
                                     <tr>
@@ -54,7 +54,7 @@
                                 </tbody>
                             </div>
 
-                            <div id="bottom-left-info"  class="info">
+                            <div id="bottom-left-info"  class="info hidden">
                                 <div id="hp-bar"></div>
                                 <tbody>
                                     <tr>
@@ -68,7 +68,7 @@
                                 </tbody>
                             </div>
 
-                            <div id="bottom-right-info"  class="info">
+                            <div id="bottom-right-info"  class="info hidden">
                                 <div id="hp-bar"></div>
                                 <tbody>
                                     <tr>

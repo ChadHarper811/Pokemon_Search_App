@@ -14,7 +14,7 @@ const defense = document.getElementById("defense");
 const specialAttack = document.getElementById("special-attack");
 const specialDefense = document.getElementById("special-defense");
 const speed = document.getElementById("speed");
-const searchDiv = document.getElementById("search-div");
+const searchForm = document.getElementById("search-form");
 const searchBtn = document.getElementById("search-button");
 const searchInput = document.getElementById("search-input")
 const gameBoyBody = document.getElementById("game-boy-body");
@@ -30,9 +30,13 @@ const startingDelay = setTimeout(delayFinished, 4500);
 
 // functions
 const startUp = () => {
-    startingText.style.display = "none";
-    searchDiv.classList.remove("info");
+    startingText.classList.add("hidden");
+    searchForm.classList.remove("hidden");
     gameBoyBody.style.zoom = "220%";
+}
+
+const pokemonSearch = () => {
+    
 }
 
 // event handlers

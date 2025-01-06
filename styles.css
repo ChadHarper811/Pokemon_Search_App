@@ -169,7 +169,7 @@ body {
 }
 
 
-.input-div {
+.input-form {
     width: 36vh;
     height: 10vh;
     padding: .5vh;
@@ -185,15 +185,26 @@ body {
     color: var(--orange);
     font-family: 'Nova Square', sans-serif;
     font-size: 1.2vh;
+    
 }
 
 #search-button {
     font-size: 1.2vh;
     font-family: 'Nova Square', sans-serif;
-    padding: .2vh;
+    padding: .3vh;
     color: var(--off_white);
     background-color: var(--orange);
+    border: none;
     cursor: pointer;
+    
+}
+
+#search-input:focus {
+    outline: 1px solid var(--orange)
+}
+
+.hidden {
+    display: none;
 }
 
 .info {
