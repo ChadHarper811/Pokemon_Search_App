@@ -60,7 +60,7 @@ const pokemonSearch = async () => {
         // bottom left info
         hpTotal.textContent = `${data.stats[0].base_stat}/   `;
         hp.textContent = `${data.stats[0].base_stat}`
-        types.innerHTML = data.types.map(obj => `<span class="type">${obj.type.name}</span>`).join("");
+        types.innerHTML = data.types.map(obj => `<span class="type">${obj.type.name.toUpperCase()}</span>`).join(" ");
 
         // bottom right info
         attack.textContent = data.stats[1].base_stat;
