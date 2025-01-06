@@ -5,7 +5,7 @@ const batteryLight = document.getElementById("battery-light");
 const batteryLabel = document.getElementById("battery-label");
 const pokemonName = document.getElementById("pokemon-name");
 const pokemonId = document.getElementById("pokemon-id");
-const thumbnail = document.getElementById("thumbnail-container");
+const sprite = document.getElementById("sprite-container");
 const weight = document.getElementById("weight");
 const height = document.getElementById("height");
 const types = document.getElementById("types");
@@ -49,8 +49,8 @@ const pokemonSearch = async () => {
         const data = await respose.json();
 
         // top info
-        thumbnail.innerHTML = `
-        <img id="thumbnail" src="${data.sprites.front_default}" alt="${data.name} front default sprite"> 
+        sprite.innerHTML = `
+        <img id="sprite" src="${data.sprites.front_default}" alt="${data.name} front default sprite"> 
         `;
         pokemonId.textContent = `${data.id}`;
         pokemonName.textContent = `${data.name.toUpperCase()}`;
@@ -85,8 +85,8 @@ const clearDisplay = () => {
     infoBottomRight.classList.add("hidden");
 
     // top info clear
-    const thumbnail = document.getElementById("thumbnail");
-    if (thumbnail) thumbnail.remove();
+    const sprite = document.getElementById("sprite");
+    if (sprite) sprite.remove();
 
     pokemonName.textContent = "";
     pokemonId.textContent = "";

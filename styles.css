@@ -206,7 +206,7 @@ body {
     outline: 1px solid var(--orange)
 }
 
-#info-top, #thumbnail-container, #pokemon-id-label, #pokemon-name, #height, #weight, #info-bottom-left, #info-bottom-right, #hp-bar, #hp-label, #bar-background, #bar, #hp-row, #type-label, #types, .type, #attack-label, #attack, #defense-label, #defense, #special-attack-label, #special-attack, #special-defense-label, #special-defense, #speed-label, #speed {
+#info-top, #sprite-container, #pokemon-id-label, #pokemon-name, #height, #weight, #info-bottom-left, #info-bottom-right, #hp-bar, #hp-label, #bar-background, #bar, #hp-row, #type-label, #types, .type, #attack-label, #attack, #defense-label, #defense, #special-attack-label, #special-attack, #special-defense-label, #special-defense, #speed-label, #speed {
     color: var(--screen-text);
     position: absolute;
 }
@@ -219,11 +219,11 @@ body {
     border-bottom: 2px solid var(--screen-text);
 }
 
-#thumbnail-container {
+#sprite-container {
     height: 12vh;
     width: 12vh;
 }
-#thumbnail {
+#sprite {
     width: 100%;
     height: auto;
     mix-blend-mode: overlay;
