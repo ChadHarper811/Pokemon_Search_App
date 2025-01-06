@@ -47,49 +47,60 @@ const pokemonSearch = async () => {
         );
         const data = await respose.json();
 
-        pokemonName.textContent = `${data.name.toUpperCase()}`;
-        pokemonId.textContent = `NO. ${data.id}`;
-        weight.textContent = `Weight: ${data.weight}`;
-        height.textContent = `Height: ${data.height}`;
-        pokemonThumbnail.innerHTML = `
+        // top info
+        thumbnail.innerHTML = `
         <img id="thumbnail" src="${data.sprites.front_default}" alt="${data.name} front default sprite"> 
         `;
-        hp.textContent = data.stats[0].base_stat;
+        pokemonId.textContent = `${data.id}`;
+        pokemonName.textContent = `${data.name.toUpperCase()}`;
+        height.textContent = `Height: ${data.height}`;
+        weight.textContent = `Weight: ${data.weight}`;
+        
+        // bottom left info
+        hp.textContent = `${data.stats[0].base_stat}/   ${data.stats[0].base_stat}`;
+        types.innerHTML = data.types.map(obj => `<span class="type">${obj.type.name}</span>`).join("");
+
+        // bottom right info
         attack.textContent = data.stats[1].base_stat;
         defense.textContent = data.stats[2].base_stat;
         specialAttack.textContent = data.stats[3].base_stat;
         specialDefense.textContent = data.stats[4].base_stat;
         speed.textContent = data.stats[5].base_stat;
-        types.innerHTML = data.types.map(obj => `<p class="type">${obj.type.name}</p>`).join("");
+        
         infoTop.classList.remove("hidden");
         infoBottomLeft.classList.remove("hidden");
         infoBottomRight.classList.remove("hidden");
     } catch (error) {
         clearDisplay();
         alert('Pokémon not found');
-        console.log(`Pokémon not found: ${err}`);
+        console.log(`Pokémon not found: ${error}`);
     }
 };
 
 const clearDisplay = () => {
+    infoTop.classList.add("hidden");
+    infoBottomLeft.classList.add("hidden");
+    infoBottomRight.classList.add("hidden");
+
+    // top info clear
     const thumbnail = document.getElementById("thumbnail");
     if (thumbnail) thumbnail.remove();
 
     pokemonName.textContent = "";
-    pokemonID.textContent = "";
-    types.innerHTML = "";
+    pokemonId.textContent = "";
     height.textContent = "";
     weight.textContent = "";
+
+    // bottom right info clear
     hp.textContent = "";
+    types.innerHTML = "";
+    
+    // bottom left info clear
     attack.textContent = "";
     defense.textContent = "";
     specialAttack.textContent = "";
     specialDefense.textContent = "";
     speed.textContent = "";
-
-    infoTop.classList.add("hidden");
-    infoBottomLeft.classList.add("hidden");
-    infoBottomRight.classList.add("hidden");
 };
 
 // event handlers
