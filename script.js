@@ -23,6 +23,7 @@ const gameBoyBody = document.getElementById("game-boy-body");
 const infoTop = document.getElementById("info-top");
 const infoBottomLeft = document.getElementById("info-bottom-left");
 const infoBottomRight = document.getElementById("info-bottom-right");
+const header = document.getElementById("header");
 
 // delaying event handlers so start up animation can finish
 let startingDelayFinsihed = false;
@@ -35,6 +36,7 @@ const startingDelay = setTimeout(delayFinished, 4500);
 
 // functions
 const startUp = () => {
+    header.classList.add("hidden");
     startingText.classList.add("hidden");
     searchForm.classList.remove("hidden");
     gameBoyBody.style.zoom = "220%";

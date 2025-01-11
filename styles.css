@@ -38,7 +38,6 @@ body {
 
 .header {
     font-size: 6vh;
-    margin-bottom: 2vh;
 }
 
 #on-off-switch {
@@ -373,6 +372,7 @@ body {
     background-color: var(--red);
     border-radius: 10px 10px 50px 10px;
     padding-top: 30px;
+    margin-top: 2vh;
     box-shadow: 6px -6px 12px var(--shadow) inset, -6px 6px 12px var(--highlight) inset;
 }
 
